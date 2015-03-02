@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title></title>
+    </head>
+    <body>
+        <div th:each="holder: ${listHolder}">
+            <th th:text="${holder.thumbURL}"/>
+            <th th:text="|Score: ${holder.counter}|" />
+            <th th:text="${holder.linkURL}" />
+            <br />
+        </div>
+    </body>
+</html>
